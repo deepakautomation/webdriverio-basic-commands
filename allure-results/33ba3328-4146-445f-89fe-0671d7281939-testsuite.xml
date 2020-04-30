@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588189276858' stop='1588189313309'>
+    <name>DD</name>
+    <title>DD</title>
+    <test-cases>
+        <test-case start='1588189276859' status='broken' stop='1588189313307'>
+            <name>DD test</name>
+            <title>DD test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588189276915' status='passed' stop='1588189308831'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='b1f2f307-e90f-43d5-8a44-c0bc86e7a882-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588189312836' status='passed' stop='1588189313305'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='8ca39f3c-2001-4922-a3dd-eaf30962b864-attachment.png' type='image/png' size='229520'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>Cannot read property 'selectByIndex' of undefined</message>
+                <stack-trace>TypeError: Cannot read property 'selectByIndex' of undefined
+                    at Context.&lt;anonymous> (C:\Users\Deepak\Documents\webdriver-io\__test__\dropdownTest.js:11:20)
+                    at Context.executeSync (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

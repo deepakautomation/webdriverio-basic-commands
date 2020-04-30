@@ -1,0 +1,75 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588174474287' stop='1588174478370'>
+    <name>fetch text</name>
+    <title>fetch text</title>
+    <test-cases>
+        <test-case start='1588174474287' status='broken' stop='1588174478369'>
+            <name>fetch specific text</name>
+            <title>fetch specific text</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588174474343' status='passed' stop='1588174477769'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='df19e67d-794c-40a3-a224-b23a30c4b8fd-attachment.json' type='application/json' size='42'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588174477770' status='passed' stop='1588174477799'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='34fc5b4f-3f86-4e1a-a32d-255dc7b8a54f-attachment.json' type='application/json' size='66'/>
+                        <attachment title='Response' source='f7403e6b-5de9-4eaa-916a-f85f0e333add-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588174477814' status='broken' stop='1588174478369'>
+                    <name>POST /session/:sessionId/element/52715eff-2c65-406a-a8a6-1c0f4a13b43f/element</name>
+                    <title>POST /session/:sessionId/element/52715eff-2c65-406a-a8a6-1c0f4a13b43f/element</title>
+                    <attachments>
+                        <attachment title='Request' source='805126b7-70df-425d-ac27-470c92725108-attachment.json' type='application/json' size='49'/>
+                    </attachments>
+                    <steps>
+                        <step start='1588174477917' status='passed' stop='1588174478367'>
+                            <name>GET /session/:sessionId/screenshot</name>
+                            <title>GET /session/:sessionId/screenshot</title>
+                            <attachments>
+                                <attachment title='Screenshot' source='39a51d06-0903-476c-b142-33b984276303-attachment.png' type='image/png' size='104370'/>
+                            </attachments>
+                            <steps/>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>invalid selector: An invalid or illegal selector was specified
+                  (Session info: chrome=81.0.4044.129)</message>
+                <stack-trace>invalid selector: An invalid or illegal selector was specified
+                  (Session info: chrome=81.0.4044.129)
+                    at getErrorFromResponseBody (C:\Users\Deepak\Documents\webdriver-io\node_modules\webdriver\build\utils.js:124:10)
+                    at WebDriverRequest._request (C:\Users\Deepak\Documents\webdriver-io\node_modules\webdriver\build\request.js:148:56)
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                    at async Element.elementErrorHandlerCallbackFn (C:\Users\Deepak\Documents\webdriver-io\node_modules\webdriverio\build\middlewares.js:21:24)
+                    at async Element.$ (C:\Users\Deepak\Documents\webdriver-io\node_modules\webdriverio\build\commands\element\$.js:19:15)
+                    at async Element.runCommandWithHooks (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\wrapCommand.js:88:21)
+                    at Element.runCommandWithHooks (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\wrapCommand.js:82:22)
+                    at Element.wrapCommandFn (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\wrapCommand.js:59:40)
+                    at Element.elementErrorHandlerCallback (C:\Users\Deepak\Documents\webdriver-io\node_modules\webdriverio\build\middlewares.js:40:8)
+                    at BlazeMeter.getSpecificElement (C:\Users\Deepak\Documents\webdriver-io\pages\blazemeter.js:10:33)
+                    at Context.&lt;anonymous> (C:\Users\Deepak\Documents\webdriver-io\__test__\getters.js:8:31)
+                    at Context.executeSync (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

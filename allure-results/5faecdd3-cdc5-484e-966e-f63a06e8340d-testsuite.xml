@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588189086491' stop='1588189100241'>
+    <name>DD</name>
+    <title>DD</title>
+    <test-cases>
+        <test-case start='1588189086492' status='broken' stop='1588189100239'>
+            <name>DD test</name>
+            <title>DD test</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588189086547' status='passed' stop='1588189099776'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='5bbde808-78a1-47ea-9387-acea51c9a22b-attachment.json' type='application/json' size='36'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588189099778' status='passed' stop='1588189100237'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='52958187-326c-44ef-be93-5ccda4d33894-attachment.png' type='image/png' size='229520'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>dropdown.selectByAttribute is not a function</message>
+                <stack-trace>TypeError: dropdown.selectByAttribute is not a function
+                    at Context.&lt;anonymous> (C:\Users\Deepak\Documents\webdriver-io\__test__\dropdownTest.js:9:14)
+                    at Context.executeSync (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

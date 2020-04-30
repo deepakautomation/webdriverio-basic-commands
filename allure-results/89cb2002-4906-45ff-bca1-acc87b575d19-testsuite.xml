@@ -1,0 +1,39 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588172879965' stop='1588172883735'>
+    <name>fetch the text of the webelements</name>
+    <title>fetch the text of the webelements</title>
+    <test-cases>
+        <test-case start='1588172879965' status='passed' stop='1588172883711'>
+            <name>fetch text of all the links</name>
+            <title>fetch text of all the links</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588172880043' status='passed' stop='1588172883391'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='398e09f0-2d5e-4d52-a998-bf4a0fb112a7-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588172883393' status='passed' stop='1588172883441'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='02785f15-8967-4cf2-8a89-fed0a852ef65-attachment.json' type='application/json' size='40'/>
+                        <attachment title='Response' source='3ee1a23b-fd60-465d-8557-2f7db7caef88-attachment.json' type='application/json' size='13015'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

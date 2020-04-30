@@ -1,0 +1,45 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588187012780' stop='1588187024696'>
+    <name>Test move to element feature</name>
+    <title>Test move to element feature</title>
+    <test-cases>
+        <test-case start='1588187012781' status='broken' stop='1588187024695'>
+            <name>move to element</name>
+            <title>move to element</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588187012833' status='passed' stop='1588187018727'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='cbceeeb3-854e-41d5-8a69-7d4bfa1b9f02-attachment.json' type='application/json' size='40'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588187018728' status='passed' stop='1588187024694'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='cdc833a2-1ea6-4b45-8a91-a682c95a6c7b-attachment.png' type='image/png' size='6729'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>moveToPage.moveToElement is not a function</message>
+                <stack-trace>TypeError: moveToPage.moveToElement is not a function
+                    at Context.&lt;anonymous> (C:\Users\Deepak\Documents\webdriver-io\__test__\moveToTest.js:8:20)
+                    at Context.executeSync (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

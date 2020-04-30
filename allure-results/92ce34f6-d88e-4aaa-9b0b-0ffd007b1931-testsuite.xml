@@ -1,0 +1,37 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588186982919' stop='1588186983367'>
+    <name>Test move to element feature</name>
+    <title>Test move to element feature</title>
+    <test-cases>
+        <test-case start='1588186982920' status='broken' stop='1588186983366'>
+            <name>move to element</name>
+            <title>move to element</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588186982974' status='passed' stop='1588186983363'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='41319a40-6a8f-4d53-abdb-d04f436cded4-attachment.png' type='image/png' size='6551'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>moveToPage.moveToElement is not a function</message>
+                <stack-trace>TypeError: moveToPage.moveToElement is not a function
+                    at Context.&lt;anonymous> (C:\Users\Deepak\Documents\webdriver-io\__test__\moveToTest.js:7:20)
+                    at Context.executeSync (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

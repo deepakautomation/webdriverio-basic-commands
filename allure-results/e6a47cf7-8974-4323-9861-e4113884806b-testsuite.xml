@@ -1,0 +1,54 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588172826450' stop='1588172831539'>
+    <name>fetch the text of the webelements</name>
+    <title>fetch the text of the webelements</title>
+    <test-cases>
+        <test-case start='1588172826451' status='broken' stop='1588172831538'>
+            <name>fetch text of all the links</name>
+            <title>fetch text of all the links</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588172826498' status='passed' stop='1588172830629'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='e163088c-be73-481b-972c-a221d16e156f-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588172830632' status='passed' stop='1588172830681'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='a31a2f96-f006-4933-9750-bcaf2c7d30a8-attachment.json' type='application/json' size='40'/>
+                        <attachment title='Response' source='6408084f-b93e-4586-9ac6-b87dd9c5f50b-attachment.json' type='application/json' size='10012'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588172830842' status='passed' stop='1588172831536'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='61d7c25a-807c-429d-ad04-27cefe13a536-attachment.png' type='image/png' size='397475'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>homePage.allLinks is not a function</message>
+                <stack-trace>TypeError: homePage.allLinks is not a function
+                    at Context.&lt;anonymous> (C:\Users\Deepak\Documents\webdriver-io\__test__\findElements.js:10:30)
+                    at Context.executeSync (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

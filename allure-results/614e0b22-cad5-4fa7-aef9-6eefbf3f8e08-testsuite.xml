@@ -1,0 +1,56 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588172978197' stop='1588172983352'>
+    <name>fetch the text of the webelements</name>
+    <title>fetch the text of the webelements</title>
+    <test-cases>
+        <test-case start='1588172978198' status='broken' stop='1588172983350'>
+            <name>fetch text of all the links</name>
+            <title>fetch text of all the links</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588172978249' status='passed' stop='1588172982409'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='d77e773d-9cab-4f08-a717-987f2a642acd-attachment.json' type='application/json' size='34'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588172982415' status='passed' stop='1588172982487'>
+                    <name>POST /session/:sessionId/elements</name>
+                    <title>POST /session/:sessionId/elements</title>
+                    <attachments>
+                        <attachment title='Request' source='e1bfb3d7-53de-4e35-936d-b961b588ba32-attachment.json' type='application/json' size='40'/>
+                        <attachment title='Response' source='bc34adc2-8601-4390-b5cd-5e860833c4ec-attachment.json' type='application/json' size='10012'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588172982624' status='passed' stop='1588172983348'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='cbd0f8a7-7da0-46b2-9a22-6909adf5a694-attachment.png' type='image/png' size='401891'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>links.getText is not a function</message>
+                <stack-trace>TypeError: links.getText is not a function
+                    at C:\Users\Deepak\Documents\webdriver-io\__test__\findElements.js:14:45
+                    at Array.forEach (&lt;anonymous>)
+                    at Context.&lt;anonymous> (C:\Users\Deepak\Documents\webdriver-io\__test__\findElements.js:13:15)
+                    at Context.executeSync (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

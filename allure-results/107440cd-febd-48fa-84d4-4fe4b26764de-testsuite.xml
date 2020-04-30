@@ -1,0 +1,87 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1588176007281' stop='1588176011393'>
+    <name>fetch text</name>
+    <title>fetch text</title>
+    <test-cases>
+        <test-case start='1588176007282' status='passed' stop='1588176010977'>
+            <name>fetch specific text</name>
+            <title>fetch specific text</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588176007336' status='passed' stop='1588176010819'>
+                    <name>POST /session/:sessionId/url</name>
+                    <title>POST /session/:sessionId/url</title>
+                    <attachments>
+                        <attachment title='Request' source='55d2d4ce-3d11-41c7-98a5-793c0140e1c4-attachment.json' type='application/json' size='42'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588176010820' status='passed' stop='1588176010846'>
+                    <name>POST /session/:sessionId/element</name>
+                    <title>POST /session/:sessionId/element</title>
+                    <attachments>
+                        <attachment title='Request' source='5c7c3983-e1d7-43d5-888b-1cb569a0f6f4-attachment.json' type='application/json' size='66'/>
+                        <attachment title='Response' source='5af2d2ad-a15a-4592-95bf-00a1a814ae48-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588176010856' status='passed' stop='1588176010910'>
+                    <name>POST /session/:sessionId/element/f3039f5e-78e1-48d1-81ee-344f5f846cee/element</name>
+                    <title>POST /session/:sessionId/element/f3039f5e-78e1-48d1-81ee-344f5f846cee/element</title>
+                    <attachments>
+                        <attachment title='Request' source='58e86828-1a10-4ef1-b7a9-9c5b5a66efd7-attachment.json' type='application/json' size='44'/>
+                        <attachment title='Response' source='f3affcfa-213a-4779-b20b-6bf815490831-attachment.json' type='application/json' size='83'/>
+                    </attachments>
+                    <steps/>
+                </step>
+                <step start='1588176010914' status='passed' stop='1588176010975'>
+                    <name>GET /session/:sessionId/element/6fbb8be7-2e57-4443-ade7-84ca7e004d67/text</name>
+                    <title>GET /session/:sessionId/element/6fbb8be7-2e57-4443-ade7-84ca7e004d67/text</title>
+                    <attachments>
+                        <attachment title='Response' source='cdef7dab-1aa2-43e6-8528-1f90e6566c16-attachment.json' type='application/json' size='11'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+        <test-case start='1588176010978' status='broken' stop='1588176011391'>
+            <name>click on customers</name>
+            <title>click on customers</title>
+            <labels>
+                <label name='language' value='javascript'/>
+                <label name='framework' value='wdio'/>
+                <label name='thread' value='0-0'/>
+            </labels>
+            <parameters>
+                <parameter kind='argument' name='browser' value='chrome'/>
+            </parameters>
+            <steps>
+                <step start='1588176010980' status='passed' stop='1588176011389'>
+                    <name>GET /session/:sessionId/screenshot</name>
+                    <title>GET /session/:sessionId/screenshot</title>
+                    <attachments>
+                        <attachment title='Screenshot' source='98c8b5f1-3716-4765-a970-afa55da908cc-attachment.png' type='image/png' size='104370'/>
+                    </attachments>
+                    <steps/>
+                </step>
+            </steps>
+            <attachments/>
+            <failure>
+                <message>this.getSpecificElement.isDisplayed is not a function</message>
+                <stack-trace>TypeError: this.getSpecificElement.isDisplayed is not a function
+                    at BlazeMeter.clickOnCustomers (C:\Users\Deepak\Documents\webdriver-io\pages\blazemeter.js:14:32)
+                    at Context.&lt;anonymous> (C:\Users\Deepak\Documents\webdriver-io\__test__\getters.js:15:20)
+                    at Context.executeSync (C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:56:18)
+                    at C:\Users\Deepak\Documents\webdriver-io\node_modules\@wdio\sync\build\index.js:82:70</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
